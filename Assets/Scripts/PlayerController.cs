@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
+    public Animator animator;
 
     private Vector2 moveInput;
     private PlayerInputActions inputActions;
@@ -34,12 +35,25 @@ public class PlayerController : MonoBehaviour
     private void OnMovePerformed(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        Debug.Log("Move Input: " + moveInput);
+
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", moveInput.x);
+            animator.SetFloat("MoveY", moveInput.y);
+            animator.SetFloat("Speed", moveInput.sqrMagnitude); 
+        }
     }
 
     private void OnMoveCanceled(InputAction.CallbackContext context)
     {
         moveInput = Vector2.zero;
+        
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", 0);
+            animator.SetFloat("MoveY", 0);
+            animator.SetFloat("Speed", 0);
+        }
     }
 
     private void FixedUpdate()
@@ -47,5 +61,4 @@ public class PlayerController : MonoBehaviour
         if (rb != null)
             rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
     }
-
 }
