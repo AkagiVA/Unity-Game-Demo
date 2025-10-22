@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "keyboard",
+            "id": "6c76718a-01eb-431d-8938-400a9fcea36d",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Button",
+                    "id": "3b392fce-4b1b-4ba2-a0c8-8e43b4c02de4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "70c7fdd9-51e4-443d-88b1-009e55b09954",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
