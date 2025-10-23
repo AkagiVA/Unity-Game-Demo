@@ -1,0 +1,4 @@
+repository "Unity-Game-Demo 2025-10-22_02-04-02/Unity-Game-Demo@1375860065054@cloud"
+  path "/"
+    br "/main"
+    co "/main"
