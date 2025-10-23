@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     private void OnMoveCanceled(InputAction.CallbackContext context)
     {
         moveInput = Vector2.zero;
-        
+
         if (animator != null)
         {
             animator.SetFloat("MoveX", 0);
