@@ -674,11 +674,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: b1c242cb-7b11-45aa-89b7-ea740b231cfc
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Unity-Game-Demo 2025-10-23_21-48-58
-  organizationId: unity_6b46d53a1d8aa3542824
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
